@@ -40,7 +40,7 @@ const Platform = () => {
     e.preventDefault();
     if (formData.username && formData.email && formData.password) {
       try {
-        const res = await axios.post("http://localhost:5000/api/auth/register", formData);
+        const res = await axios.post("https://moneymaker-2.onrender.com/api/auth/register", formData);
         alert(res.data.message || "Registration successful"); // ✅ Use the response message
         navigate("/login");
       } catch (err) {
