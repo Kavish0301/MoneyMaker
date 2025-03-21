@@ -7,7 +7,7 @@ export const BattingTable = () => {
 
   const saveDataToBackend = async (row) => {
     try {
-      const response = await fetch('http://localhost:5000/api/clicked-data/save', {
+      const response = await fetch('https://moneymaker-2.onrender.com/api/clicked-data/save', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
